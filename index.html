@@ -6,36 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <!-- <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.js"> -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
 </head>
 <body>
     <div class="cover"></div>
     <div class="wrapper">
         <div class="header-nav-bar">
-            <div class="nav-mobile">
-                <div style="background-color: black;display: flex;grid-gap: 30%;">
-                    <div>
-                        <a style="margin-top: 0.5rem;" class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div>                     
-                            <img src="image/Logo.png" width="140px" height="60px" alt="" srcset="">
-                    </div>
-
-                </div>
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                       <a href="">Home</a>
-                <a href="">Pages</a>
-                <a href="">Classes</a>
-                <a href="">Portfolio</a>
-                <a href="">Blog</a>
-                <a href="">Contats</a>
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <nav>
                     <div class="logo"> <img src="image/Logo.png" alt=""></div>
@@ -51,8 +34,11 @@
         </div>
         <div class="main-content">
             <div class="background">
-                <div class="background-item">
-                    <img src="image/Base (9).png" alt="">
+                <div class="background-item ">
+                    <img src="image/Base.png" alt="">
+                   <div class="girl">
+                       <img src="image/Layer 3.png" alt="">
+                   </div>
                     <div class="background-content container">
                         <div class="row">
                             <div class="background-content-inner">
@@ -62,7 +48,6 @@
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
                                 <div class="slide-btn"><a href="" class="btn" >Shop Now</a></div>
                                 </div>
-                                <div class="girl"><img src="image/Layer 3.png" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -106,60 +91,102 @@
                        <div class="featured" >FEATURED</div>
                        <div class="reviews" > MOST REVIEWS</div>
                     </div>
-                    <hr>
+                    
                     <div class="list1">
                         <div class="row">
-                            <div class="cardio">
-                                <img src="image/Body Champ Cardio Dual Trainer.png" alt="">
-                                <div class="small-icon"></div>
-                               <p>Body Champ Cardio</p> 
-                                <div><span>$342.00</span></div>
+
+                            <div class="strengh-item">
+                                <div class="item-img">
+                                    <img src="image/Body Champ Cardio Dual Trainer.png" alt="">
+                                </div>
+                                <div class="item-content">
+                                    <!-- <div class="item-icon">
+                                        <img src="image/cart.png" alt="">
+                                        <img src="image/eye.png" alt="">
+                                        <img src="image/heart.png" alt="">
+                                        <img src="image/arrow.png" alt="">
+                                    </div> -->
+                                  <p>Body Champ Cardio</p> 
+                                  <div><span>$342.00</span></div>
+                                </div>
                             </div>
-                            <div class="solid">
-                                <img src="image/Body Solid GCEC340 Cam Series Leg Extension Curl Machine.png" alt="">
-                                <p>Body Solid GCEC340</p>
-                                <div><span>$214.00</span></div>
+                            <div class="strengh-item">
+                                <div class="item-img">
+                                    <img src="image/Body Solid GCEC340 Cam Series Leg Extension Curl Machine.png" alt="">
+                                </div>
+                                <div class="item-content">
+                                    <p>Body Solid GCEC340</p>
+                                    <div><span>$214.00</span></div>
+                                </div>
                             </div>
-                            <div class="bowflex">
-                                <img src="image/Bowflex BXE116 Elliptical.png" alt="">
-                                <p>Bowflex BXE116 Elliptical</p>
-                                <div><span>$421.00</span></div>
+                            <div class="strengh-item">
+                                <div class="item-img"> <img src="image/Bowflex BXE116 Elliptical.png" alt=""></div>
+                                <div class="item-content">
+                                    <p>Bowflex BXE116 Elliptical</p>
+                                    <div><span>$421.00</span></div>
+                                </div>
                             </div>
-                            <div class="ghd">
-                                <img src="image/ETHOS GHD Weight Bench.png" alt="">
-                                <p>ETHOS GHD</p>
-                                <div><span>$152.00</span></div>
+                            <div class="strengh-item">
+                                <div class="item-img"> <img src="image/ETHOS GHD Weight Bench.png" alt=""></div>
+                                <div class="item-content">
+                                    <p>ETHOS GHD</p>
+                                    <div><span>$152.00</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="list2">
                         <div class="row">
-                            <div class="afg">
-                                <img src="image/AFG Pro 7.2AI Incline Trainer.png" alt="">
-                                <p>AFG Pro 7.2AI Incline</p>
-                                <div><span>$252.00</span></div>
+                            <div class="strengh-item">
+                                <div class="item-img"><img src="image/AFG Pro 7.2AI Incline Trainer.png" alt=""></div>
+                                <div class="item-content">
+                                    <p>AFG Pro 7.2AI Incline</p>
+                                    <div><span>$252.00</span></div>
+                                </div>
+                    
                             </div>
-                            <div class="weight">
-                                <img src="image/Marcy Standard Weight Bench.png" alt="">
-                                <p>Weight Bench</p>
-                                <div><span>$412.00</span></div>
+                            <div class="strengh-item">
+                                <div class="item-img"><img src="image/Marcy Standard Weight Bench.png" alt=""></div>
+                                <div class="item-content">
+                                    <p>Weight Bench</p>
+                                    <div><span>$412.00</span></div>
+                                </div>
+                               
                             </div>
-                            <div class="proform">
-                                <img src="image/ProForm Hiit Trainer Lite 5.9.png" alt="">
-                                <p>ProForm Hiit Trainer Lite 5.9</p>
-                                <div><span>$300.00</span></div>
+                            <div class="strengh-item">
+                                <div class="item-img"><img src="image/ProForm Hiit Trainer Lite 5.9.png" alt=""></div>
+                                <div class="item-content">
+                                    <p>ProForm Hiit Trainer Lite 5.9</p>
+                                    <div><span>$300.00</span></div>
+                                </div>
                             </div>
-                            <div class="fitness">
-                                <img src="image/Fitness Gear Pro Olympic Weight Bench.png" alt="">
-                                <p>Fitness Gear Pro</p>
-                                <div><span>$124.00</span></div>
+                            <div class="strengh-item">
+                                <div class="item-img">
+                                    <img src="image/Fitness Gear Pro Olympic Weight Bench.png" alt="">
+                                </div>
+                                <div class="item-content">
+                                    <p>Fitness Gear Pro</p>
+                                    <div><span>$124.00</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slider">
-                <div class="container">
+            <div class="container">
+                <div class="slider ">
+                    <div class="slider-content">
+                        <h2>See What They Said About Us</h2>
+                        <div class="img-slider"><img src="image/5cdbcad37abe8.png" alt=""></div>
+                        <p>“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
+                        <h3>LINA</h3>
+                         <p> Happy Clients</p>
+                         <div class="dot">
+                             <div style="width: 10px;height: 10px;border-radius: 5px;background-color: #dd2f31;"></div>
+                             <div style="width: 10px;height: 10px;border-radius: 5px;background-color: #cccccc;"></div>
+                             <div style="width: 10px;height: 10px;border-radius: 5px;background-color: #cccccc;"></div>
+                         </div>
+                    </div>
                     <div class="slider-content">
                         <h2>See What They Said About Us</h2>
                         <div class="img-slider"><img src="image/5cdbcad37abe8.png" alt=""></div>
@@ -254,6 +281,15 @@
             </div>
         </div>
     </div>
-  
+   <script>
+      $(".slider").slick({
+
+// normal options...
+arrows: false,
+
+// the magic
+
+});
+   </script>
 </body>
 </html>

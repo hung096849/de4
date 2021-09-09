@@ -3,20 +3,21 @@
     font-family: 'Poppins';
 }
 .background{
+    .girl{
+        position: absolute;
+        transform: translate(170%,-100%);
+        width: 440px;
+        img{
+            width: 100%;
+            height: 770px;
+        }
+    }
     &-item{
        position: relative;bottom: 100px;
        z-index: -1;
         img{
             width: 100%;
             height: 950px;
-        }
-    }
-    .girl{
-        width: 315px;
-        height: 755px;
-        img{
-            width: 100%;
-            height: 100%;
         }
     }
     .background-content-inner{
@@ -27,7 +28,7 @@
         justify-content: space-between;
     }
     .background-text{
-        transform: translate(-14%,10%);
+        transform: translate(-39%,10%);
         .background-title{
             font-size: 60px;
             color: #ffffff;
@@ -114,21 +115,46 @@
     }
 }
 .product{
-   .featured, .reviews{
+  .sellers, .featured, .reviews{
     font-size: 18px;
     line-height: 24px;
     color: #000000;
     font-weight: 700;
    margin-left: 40px;
-}
-.sellers{
+   cursor: pointer;
+   &:active{
     color: #dd2f31;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    margin-left: 40px;
+    border-bottom: 1px solid #dd2f31;;
+   }
 }
 .list1{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+  .strengh{
+      display: flex;
+      align-items: center;
+
+      &-item{
+        &:hover{
+            border: 1px solid  rgba(0,0,0,0.2);
+        }
+          .col(25%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        .item-img{
+            
+            img{
+                vertical-align: middle;
+                width: 230px;
+                height: 270px;
+            }
+        }
+       
+      }
+  }
+
     span{
         font-size: 14px;
         line-height: 24px;
@@ -141,29 +167,33 @@
         color: #000000;
         font-weight:normal
        }
-    margin-bottom: 40px;
-    margin-top: 50px;
-     .solid, .bowflex{
-        width: 270px;
-        height: 330px;
-        margin-left: 30px;
-
-    }
-    .cardio{
-        width: 270px;
-        height: 330px;
-        margin-left: 30px;
-    }
-    .ghd{
-        width: 270px;
-        height: 330px;
-         p{
-            margin-top: 35px;
-        }
-    }
+   
 
 }
 .list2{
+    margin-bottom: 120px;
+    .strengh{
+        display: flex;
+        align-items: center;
+        
+        &-item{
+            &:hover{
+                border: 1px solid rgba(0,0,0,0.2);
+            }
+            .col(25%);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .item-img{
+                img{
+                    vertical-align: middle;
+                    width: 230px;
+                    height: 270px;
+                }
+            }
+           
+        }
+    }
     span{
         font-size: 14px;
         line-height: 24px;
@@ -176,51 +206,34 @@
         color: #000000;
         font-weight:normal
        }
-    margin-bottom: 130px;
-    .afg{
-        width: 270px;
-        height: 330px;
-        margin-left: 30px;
-        p{
-            margin-top: 50px;
-        }
-    }
-    .weight{
-        width: 270px;
-        height: 330px;
-        margin-left: 30px;
-        p{
-            margin-top: 40px;
-        }
-    }
-    .fitness{
-        width: 270px;
-        height: 330px;
-        p{
-            margin-top: 30px;
-        }
-    }
-    .proform{
-        width: 270px;
-        height: 330px;
-        margin-left: 30px;
-    }
 }
 }
 .slider{
+    transform: translate(30%,0);
     margin-bottom: 90px;
-    .slider-content{
-        margin-left: 200px;
+    text-align: center;
+        
         .img-slider{
-            text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
             img{
                 border-radius: 100%;
+                vertical-align: middle;
+                text-align: center;
             }
         }
     
         width: 770px;
         h2{
             font-size: 36px;
+            line-height: 30px;
+            color: #000000;
+            font-weight: 700;
+            text-align: center;
+        }
+        h3{
+            font-size: 18px;
             line-height: 30px;
             color: #000000;
             font-weight: 700;
@@ -244,7 +257,7 @@
             }
         }
         
-    }
+    
     
 }
 .end{

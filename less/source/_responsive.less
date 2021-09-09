@@ -1,9 +1,13 @@
 @media all and (max-width: 1170px){}
 @media all and (max-width: 1024px){
-    .info{
-        display: none;
-    }
-    .product{
+   .header-nav-bar{
+       width: 1200px;
+   }
+   .background{
+       width: 1200px;
+   }
+       .product{
+        width: 1200px;
         .list1{
             padding-right: 200px;
         }
@@ -11,14 +15,24 @@
             padding-right: 200px;
         }
     }
+    hr{
+        width: 1200px;
+    }
+    .footer{
+        width: 1200px;
+    }
+    .end{
+        width: 1200px;
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 1200px;
+    }
 }
 @media all and (max-width: 768px){
-    .nav-moblie{
-       display: block;
-    }
-    .girl{
-        display: none;
-    }
     .header-nav-bar{
         nav{
             a{
@@ -30,29 +44,31 @@
         }
     }
     .slider-content{
-        transform: translate(-28%,0);
+       text-align: center;
     }
-    .list2{
-        transform: translate(50%,-460%);
-        height: 300px;
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 1200px;
     }
+   
 }
 @media all and (max-width: 576px){
-    .nav-moblie{
-        display: block;
-        position: absolute;
-    }
     .background{
         p{
             display: none;
         }
     }
     .slider-content{
-        transform: translate(-40%,0);
+      
         p{
             display: none;
         }
     }
+    
     .footer{
         hr{
             display: none;
