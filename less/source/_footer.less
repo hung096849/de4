@@ -2,65 +2,64 @@
     margin-top: 30px;
     font-family: "Poppins";
     .head-footer{
-        height: 870px;
+        height: 670px;
         background-color: #222222;
         .child1{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            p{
-                width: 770px;
-                height: 42px;
-                font-size: 14px;
-                line-height: 24px;
-                color: #777777;
-                font-weight: 400;
-                text-align: center;
-                margin-bottom: 50px
-
+            text-align: center;
+            .footer__slogan-logo{
+             img{
+                 margin-top: 64px;
+             }
             }
-            img{
-                margin-top: 90px;
-                margin-bottom: 40px;
+            .footer__slogan-content{
+                max-width: 748px;
+                color: #777777;
+                line-height: 1.714;
+                font-size: 14px;
+                padding: 25px 0;
+                margin: 0 auto;
             }
             .footer-icon{
-                img{
-                    margin-right: 30px;
-                }
+               margin-bottom: 50px;
+            justify-content: center;
+            img{
+             margin: 14px 15px;
+             font-size: 18px;
+             padding-left: 14px;
+            }
+                   
+                
             }
         }
         .child2{
-            .child2-content{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+           .row{justify-content: space-around;}
+            margin-top: 70px;
+            .contact, .account, .information, .link{ 
                 font-size: 18px;
-                line-height: 30px;
                 color: #ffffff;
-                font-weight: 700;
-                margin-top: 70px;
-                p{
+                line-height: 1.667;
+                font-weight: bold;
+              .title{
+                  margin-bottom: 22px;
+              }
+                a{
+                    font-weight: 400;
                     font-size: 14px;
                     color: #777777;
-                    font-weight: 400;
-                }
-                .contact{
-                    margin-bottom: 45px;
-                    .info1{
-                        margin-bottom: 10px;
-                        margin-left: 30px;
-                        transform: translate(0,-6%);
-                    }
-                    .contact-icon{
-                      margin-top: 10px;
-                      transform: translate(70%,0);
+                    line-height: 2.5;
+                    margin: 14px 0;
+                    &:hover{
+                        color: #a8969652;
                     }
                 }
-                div{
-                    margin-bottom: 45px;
+                svg{
+                    width: 14px;
+                    margin-right: 11px;
+                    font-size: 16px;
+                    color: #777777;
                 }
             }
+
           
         }
     }

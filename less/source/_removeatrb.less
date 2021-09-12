@@ -1,13 +1,14 @@
 body {
     margin: 0;
     padding: 0;
+    max-width: 1920px;
+    width: 100%;
 }
 a {
     color: white;
-    text-decoration: white;
+    text-decoration: none;
     &:hover {
-        color: white;
-        text-decoration: underline;
+        color: #777777;
     }
 }
 ul {
@@ -25,8 +26,10 @@ input {
     max-width: 1200px;
     width: 100%;
     padding: 0 15px;
-    margin: auto;
     box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .container-fluid {
     width: 100%;
@@ -36,7 +39,7 @@ input {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+   
 }
 .col (@width) {
   width: @width;

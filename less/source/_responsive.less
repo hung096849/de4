@@ -1,10 +1,13 @@
 @media all and (max-width: 1170px){}
 @media all and (max-width: 1024px){
-   .header-nav-bar{
-       width: 1200px;
+   body,html{
+    overflow-x: hidden;
+   }
+    .header-nav-bar{
+        width: 1024px;
    }
    .background{
-       width: 1200px;
+    width: 1024px;
    }
        .product{
         width: 1200px;
@@ -16,23 +19,27 @@
         }
     }
     hr{
-        width: 1200px;
+        width: 1024px;
     }
     .footer{
-        width: 1200px;
+        width: 1024px;
     }
     .end{
-        width: 1200px;
+        width: 1024px;
     }
     .info{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 1200px;
+        .row{
+            justify-content: center;
+        }
     }
 }
 @media all and (max-width: 768px){
+    body,html{
+        overflow-x: hidden;
+       }
+       .info {
+         margin-top: 400px;
+       }
     .header-nav-bar{
         nav{
             a{
@@ -43,20 +50,43 @@
             }
         }
     }
-    .slider-content{
-       text-align: center;
+    .slider{
+        transform: translate(-2%);
+        .slider-content{
+            text-align: center;
+         }
     }
+   
     .info{
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 1200px;
+       
+    }
+    hr{
+        width: 768px;
+    }
+    .footer{
+        width: 768px;
+    }
+    .end{
+        width: 768px;
+    }
+
+    .product{
+      .list1, .list2{
+          .row{
+              flex-direction: column;
+          }
+      }
     }
    
 }
 @media all and (max-width: 576px){
+    body,html{
+        overflow-x: hidden;
+       }
     .background{
         p{
             display: none;
