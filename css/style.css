@@ -257,13 +257,11 @@ input {
 .product .list1 .strengh-item {
   cursor: pointer;
   transition: all 0.25s;
-  border: 1px solid #ffffff;
   margin-bottom: 47px;
   text-align: center;
   height: 330px;
   width: 25%;
   padding: 0 15px;
-  margin: 15px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -273,7 +271,7 @@ input {
   position: relative;
 }
 .product .list1 .strengh-item .item-hover .cart {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   text-align: center;
@@ -295,13 +293,20 @@ input {
   transition: all 0.3s;
   color: #777777;
 }
+.product .list1 .strengh-item .item-hover .cart .cart-items svg {
+  width: 15px;
+  margin-left: 10px;
+}
 .product .list1 .strengh-item .item-hover .cart .cart-items:hover {
   background-color: #dd2f31;
   color: #ffffff;
 }
 .product .list1 .strengh-item .item-hover:hover {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0 0 2.5px 2.5 rgba(0, 0, 0, 0.2));
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.product .list1 .strengh-item .item-hover:hover .cart {
+  display: block;
 }
 .product .list1 .strengh-item .item-img img {
   vertical-align: middle;
@@ -336,7 +341,6 @@ input {
   height: 330px;
   width: 25%;
   padding: 0 15px;
-  margin: 15px 0;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -346,7 +350,7 @@ input {
   position: relative;
 }
 .product .list2 .strengh-item .item-hover .cart {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   text-align: center;
@@ -368,13 +372,20 @@ input {
   transition: all 0.3s;
   color: #777777;
 }
+.product .list2 .strengh-item .item-hover .cart .cart-items svg {
+  width: 15px;
+  margin-left: 10px;
+}
 .product .list2 .strengh-item .item-hover .cart .cart-items:hover {
   background-color: #dd2f31;
   color: #ffffff;
 }
 .product .list2 .strengh-item .item-hover:hover {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0 0 2.5px 2.5 rgba(0, 0, 0, 0.2));
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.product .list2 .strengh-item .item-hover:hover .cart {
+  display: block;
 }
 .product .list2 .strengh-item .item-img img {
   vertical-align: middle;
@@ -439,6 +450,9 @@ input {
 }
 .slider .dot div {
   margin-right: 10px;
+}
+.end hr {
+  margin-top: 90px;
 }
 .end .logo {
   margin-top: 40px;

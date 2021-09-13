@@ -134,14 +134,13 @@
       &-item{
         cursor: pointer;
         transition: all 0.25s;
-        border: 1px solid #ffffff;
         margin-bottom: 47px;
         text-align: center;
           height: 330px;
           .item-hover{
            position: relative; 
            .cart{
-             display: flex;
+             display: none;
              flex-direction: column;
              position: absolute;
              text-align: center;
@@ -161,6 +160,9 @@
                 display: flex;
                 transition: all 0.3s;
                 color: #777777;
+                svg{
+                    width: 15px; margin-left: 10px;
+                }
                 &:hover{
                     background-color: #dd2f31;
                     color: #ffffff;
@@ -168,8 +170,11 @@
              }  
            }   
             &:hover{
-                border: 1px solid rgba(0, 0, 0, 0.2);
-                box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+                filter: drop-shadow(0 0 2.5px 2.5 rgba(0,0,0,0.2));
+                box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+                .cart{
+                    display: block;
+                }
                 }
           }
         
@@ -220,7 +225,7 @@
             .item-hover{
             position: relative;
             .cart{
-                display: flex;
+                display: none;
                 flex-direction: column;
                 position: absolute;
                 text-align: center;
@@ -240,6 +245,9 @@
                    display: flex;
                    transition: all 0.3s;
                    color: #777777;
+                   svg{
+                    width: 15px; margin-left: 10px;
+                }
                    &:hover{
                     background-color: #dd2f31;
                     color: #ffffff;
@@ -247,8 +255,11 @@
                 }  
               }   
               &:hover{
-                  border: 1px solid rgba(0, 0, 0, 0.2);
-                  box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+                filter: drop-shadow(0 0 2.5px 2.5 rgba(0,0,0,0.2));
+                box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+                   .cart{
+                       display: block;
+                   }
                   }
             }
             .col(25%);
@@ -332,6 +343,9 @@
     
 }
 .end{
+    hr{
+        margin-top: 90px;
+    }
     .logo{
         margin-top: 40px;
         display: flex;
