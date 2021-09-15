@@ -1,57 +1,86 @@
-@media all and (max-width: 1200px){
+@media all and (max-width: 1170px){
 }
 @media all and (max-width: 1024px){
   *{
       box-sizing: border-box;
   }
-  .container {
-    max-width: 768px;  
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-   margin: 0 -15px;
-}
   
-  .slider{
-      transform: translate(10%);
-  }
-  .header-nav-bar{
-      a{
-          display: none;
-      }
-  }
  
 }
 @media all and (max-width: 768px){
-    
-}
-@media all and (max-width: 576px){
-   
-    .background{
-        p{
+    nav{
+        a{
             display: none;
         }
     }
+}
+@media all and (max-width: 576px){
+    .info{
+        .row1,.row2{
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .item1,.item2,.item3,.item4,.item5,.item6{
+            width: 50%;
+        }
+    }
+    .menu_mobile{
+        display: block;
+        max-width: 100px;
+    
+        img{
+            width: 100%;
+        }
+    }
+   .background-content-inner{
+       p{
+           max-width: 400px;
+       }
+   }
+    
     .slider-content{
       
         p{
             display: none;
         }
     }
-    
+    div{
+        flex-wrap: wrap;
+    }
+    .product .list1 .strengh-item {
+        cursor: pointer;
+        transition: all 0.25s;
+        margin-bottom: 47px;
+        text-align: center;
+        width: 50%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product .list2 .strengh-item {
+        cursor: pointer;
+        transition: all 0.25s;
+        margin-bottom: 47px;
+        text-align: center;
+        width: 50%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .footer{
-        hr{
-            display: none;
-        }
         .head-footer{
             .child2{
-                div{
-                    display: none;
+                .row{
+                    width: 25%;
                 }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
