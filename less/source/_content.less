@@ -3,7 +3,6 @@
     font-family: 'Poppins';
 }
 .background{
-    
     &-item{
        position: relative;bottom: 100px;
        z-index: -1;
@@ -111,18 +110,57 @@
     }
 }
 .product{
-  .sellers, .featured, .reviews{
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-    font-weight: 700;
-   margin-left: 40px;
-   cursor: pointer;
-   &:active{
-    color: #dd2f31;
-    border-bottom: 1px solid #dd2f31;;
-   }
-}
+    .ui-widget-content {
+        border: none;
+        background-color: #fff;
+        padding: 0;
+        .ui-state-default {
+            border: none;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            font-family: "Poppins";
+        }
+        .ui-widget-header {
+            background-color: #fff;
+            .ui-state-default {
+                background-color: #fff;
+              }
+          }
+         .ui-tabs-nav {
+            border: 0;
+        }
+        .ui-tabs-panel {
+            padding: 0;
+        }
+        .row {
+            margin: 0 -15px;
+        }
+        .list1, .list2{
+            .strengh-item{
+                .item-img img {
+                    width: 100%;
+                    height: unset;
+                  }
+            } 
+        }
+         
+        .ui-state-active {
+            border: none;
+            border-bottom: 2px solid #dd2f31;
+             a {
+                color: #dd2f31;
+              }
+        }
+        .ui-tabs-nav {
+            padding: 0;
+            border-bottom: 1px solid #ddd;
+            li {
+                border-bottom-width: 2px;
+               }
+          }
+            
+      }
 .list1{
     margin-top: 30px;
     margin-bottom: 40px;
@@ -136,7 +174,6 @@
         transition: all 0.25s;
         margin-bottom: 47px;
         text-align: center;
-          height: 330px;
           .item-hover{
            position: relative; 
            .cart{
@@ -155,7 +192,6 @@
                 height: 34px;
                 margin-bottom: 14px;
                 align-items: center;
-                text-align: center;
                 border-radius: 10px 0 10px 0;
                 display: flex;
                 transition: all 0.3s;
@@ -182,14 +218,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-        .item-img{
-            
-            img{
-                vertical-align: middle;
-                width: 230px;
-                height: 270px;
-            }
-        }
+       
        
       }
   }
@@ -221,7 +250,6 @@
             border: 1px solid #ffffff;
             margin-bottom: 47px;
             text-align: center;
-             height: 330px;
             .item-hover{
             position: relative;
             .cart{
@@ -266,13 +294,6 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            .item-img{
-                img{
-                    vertical-align: middle;
-                    width: 230px;
-                    height: 270px;
-                }
-            }
            
         }
     }

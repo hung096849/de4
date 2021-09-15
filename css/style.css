@@ -38,6 +38,7 @@ input {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -15px;
 }
 @font-face {
   font-family: 'Poppins';
@@ -230,21 +231,51 @@ input {
   justify-content: center;
   align-items: center;
 }
-.product .sellers,
-.product .featured,
-.product .reviews {
+.product .ui-widget-content {
+  border: none;
+  background-color: #fff;
+  padding: 0;
+}
+.product .ui-widget-content .ui-state-default {
+  border: none;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   font-weight: 700;
-  margin-left: 40px;
-  cursor: pointer;
+  font-family: "Poppins";
 }
-.product .sellers:active,
-.product .featured:active,
-.product .reviews:active {
+.product .ui-widget-content .ui-widget-header {
+  background-color: #fff;
+}
+.product .ui-widget-content .ui-widget-header .ui-state-default {
+  background-color: #fff;
+}
+.product .ui-widget-content .ui-tabs-nav {
+  border: 0;
+}
+.product .ui-widget-content .ui-tabs-panel {
+  padding: 0;
+}
+.product .ui-widget-content .row {
+  margin: 0 -15px;
+}
+.product .ui-widget-content .list1 .strengh-item .item-img img,
+.product .ui-widget-content .list2 .strengh-item .item-img img {
+  width: 100%;
+  height: unset;
+}
+.product .ui-widget-content .ui-state-active {
+  border: none;
+  border-bottom: 2px solid #dd2f31;
+}
+.product .ui-widget-content .ui-state-active a {
   color: #dd2f31;
-  border-bottom: 1px solid #dd2f31;
+}
+.product .ui-widget-content .ui-tabs-nav {
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+}
+.product .ui-widget-content .ui-tabs-nav li {
+  border-bottom-width: 2px;
 }
 .product .list1 {
   margin-top: 30px;
@@ -259,7 +290,6 @@ input {
   transition: all 0.25s;
   margin-bottom: 47px;
   text-align: center;
-  height: 330px;
   width: 25%;
   padding: 0 15px;
   box-sizing: border-box;
@@ -287,7 +317,6 @@ input {
   height: 34px;
   margin-bottom: 14px;
   align-items: center;
-  text-align: center;
   border-radius: 10px 0 10px 0;
   display: flex;
   transition: all 0.3s;
@@ -307,11 +336,6 @@ input {
 }
 .product .list1 .strengh-item .item-hover:hover .cart {
   display: block;
-}
-.product .list1 .strengh-item .item-img img {
-  vertical-align: middle;
-  width: 230px;
-  height: 270px;
 }
 .product .list1 span {
   font-size: 14px;
@@ -338,7 +362,6 @@ input {
   border: 1px solid #ffffff;
   margin-bottom: 47px;
   text-align: center;
-  height: 330px;
   width: 25%;
   padding: 0 15px;
   box-sizing: border-box;
@@ -386,11 +409,6 @@ input {
 }
 .product .list2 .strengh-item .item-hover:hover .cart {
   display: block;
-}
-.product .list2 .strengh-item .item-img img {
-  vertical-align: middle;
-  width: 230px;
-  height: 270px;
 }
 .product .list2 span {
   font-size: 14px;
@@ -555,76 +573,25 @@ input {
   text-align: center;
 }
 @media all and (max-width: 1024px) {
-  body,
-  html {
-    overflow-x: hidden;
+  * {
+    box-sizing: border-box;
   }
-  .header-nav-bar {
-    width: 1024px;
+  .container {
+    max-width: 768px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
-  .background {
-    width: 1024px;
-  }
-  .product {
-    width: 1200px;
-  }
-  .product .list1 {
-    padding-right: 200px;
-  }
-  .product .list2 {
-    padding-right: 200px;
-  }
-  hr {
-    width: 1024px;
-  }
-  .footer {
-    width: 1024px;
-  }
-  .end {
-    width: 1024px;
-  }
-  .info .row {
-    justify-content: center;
-  }
-}
-@media all and (max-width: 768px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
-  .info {
-    margin-top: 400px;
-  }
-  .header-nav-bar nav a {
-    display: none;
-  }
-  .header-nav-bar nav .icon {
-    display: none;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
   }
   .slider {
-    transform: translate(-2%);
+    transform: translate(10%);
   }
-  .slider .slider-content {
-    text-align: center;
-  }
-  .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  hr {
-    width: 768px;
-  }
-  .footer {
-    width: 768px;
-  }
-  .end {
-    width: 768px;
-  }
-  .product .list1 .row,
-  .product .list2 .row {
-    flex-direction: column;
+  .header-nav-bar a {
+    display: none;
   }
 }
 @media all and (max-width: 576px) {
