@@ -12,25 +12,25 @@
             height: 950px;
         }
     }
-    .background-content-inner{
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        top: 20%;left: 24%;
-        justify-content: space-between;
+    .background-content {
+    position: absolute;
+    top: 30.5%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+        .background-text{    
+            .background-title{
+                font-size: 60px;
+                color: #ffffff;
+                font-weight: 700;
+            }
+            .background-summary{
+              font-size: 40px;
+                color: #ffffff;
+                font-weight: 700;
+            }
     }
-    .background-text{
-        transform: translate(-16%,10%);
-        .background-title{
-            font-size: 60px;
-            color: #ffffff;
-            font-weight: 700;
-        }
-        .background-summary{
-          font-size: 40px;
-            color: #ffffff;
-            font-weight: 700;
-        }
+    
         p{
             max-width: 532px;
             height: 60px;
@@ -54,7 +54,7 @@
     }
 }
 .info{
-   transform: translate(0,-40%);
+   transform: translate(0,-180px);
    p{text-align: center;}
    .row1, .row2{
        display: flex;
@@ -120,6 +120,7 @@
     }
 }
 .product{
+   transform: translate(0,-12%);
     .ui-widget-content {
         border: none;
         background-color: #fff;
@@ -172,8 +173,6 @@
             
       }
 .list1{
-    margin-top: 30px;
-    margin-bottom: 40px;
     
   .strengh{
       display: flex;
@@ -185,6 +184,7 @@
         margin-bottom: 47px;
         
           .item-hover{
+            margin-top: 40px;
             padding-left: 30px;
             padding-bottom: 34px;
            position: relative; 
@@ -253,7 +253,7 @@
 
 }
 .list2{
-    margin-bottom: 120px;
+
     .strengh{
         display: flex;
         align-items: center;

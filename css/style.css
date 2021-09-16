@@ -135,28 +135,24 @@ input {
   width: 100%;
   height: 950px;
 }
-.background .background-content-inner {
-  display: flex;
-  flex-direction: row;
+.background .background-content {
   position: absolute;
-  top: 20%;
-  left: 24%;
-  justify-content: space-between;
+  top: 30.5%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%);
 }
-.background .background-text {
-  transform: translate(-16%, 10%);
-}
-.background .background-text .background-title {
+.background .background-content .background-text .background-title {
   font-size: 60px;
   color: #ffffff;
   font-weight: 700;
 }
-.background .background-text .background-summary {
+.background .background-content .background-text .background-summary {
   font-size: 40px;
   color: #ffffff;
   font-weight: 700;
 }
-.background .background-text p {
+.background .background-content p {
   max-width: 532px;
   height: 60px;
   font-size: 14px;
@@ -164,7 +160,7 @@ input {
   color: #ffffff;
   font-weight: 400;
 }
-.background .background-text .slide-btn {
+.background .background-content .slide-btn {
   margin-top: 55px;
   width: 170px;
   height: 50px;
@@ -176,7 +172,7 @@ input {
   text-align: center;
 }
 .info {
-  transform: translate(0, -40%);
+  transform: translate(0, -180px);
 }
 .info p {
   text-align: center;
@@ -244,6 +240,9 @@ input {
   justify-content: center;
   align-items: center;
 }
+.product {
+  transform: translate(0, -12%);
+}
 .product .ui-widget-content {
   border: none;
   background-color: #fff;
@@ -290,10 +289,6 @@ input {
 .product .ui-widget-content .ui-tabs-nav li {
   border-bottom-width: 2px;
 }
-.product .list1 {
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
 .product .list1 .strengh {
   display: flex;
   align-items: center;
@@ -310,6 +305,7 @@ input {
   align-items: center;
 }
 .product .list1 .strengh-item .item-hover {
+  margin-top: 40px;
   padding-left: 30px;
   padding-bottom: 34px;
   position: relative;
@@ -363,9 +359,6 @@ input {
   color: #000000;
   font-weight: normal;
   padding-left: 30px;
-}
-.product .list2 {
-  margin-bottom: 120px;
 }
 .product .list2 .strengh {
   display: flex;
@@ -534,6 +527,7 @@ input {
 .footer .head-footer .child2 .information,
 .footer .head-footer .child2 .link {
   margin-top: 40px;
+  margin-bottom: 100px;
   font-size: 18px;
   color: #ffffff;
   line-height: 1.667;
