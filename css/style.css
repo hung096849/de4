@@ -434,6 +434,7 @@ input {
   text-align: center;
 }
 .slider .img-slider {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -452,15 +453,21 @@ input {
 }
 .slider h3 {
   font-size: 18px;
-  line-height: 30px;
   color: #000000;
   font-weight: 700;
   text-align: center;
 }
-.slider p {
+.slider #long_text {
   height: 45px;
   font-size: 18px;
-  line-height: 30px;
+  margin-top: 50px;
+  color: #777777;
+  font-weight: 400;
+  text-align: center;
+}
+.slider #short_text {
+  height: 45px;
+  font-size: 18px;
   color: #777777;
   font-weight: 400;
   text-align: center;
