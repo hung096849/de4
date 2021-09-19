@@ -1,7 +1,9 @@
 .header-nav-bar {
     height: 100px;
+    width: 100%;
     background-color: @nav-color;
     z-index: 100;
+    position: fixed;
     font-family: 'Poppins';
 .menu_mobile{
     display: none;
@@ -11,6 +13,26 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding-top: 22px;
+    .header_nav{
+        ul{
+            display: flex;
+            font-size: 16px;
+            list-style: none;
+            li{
+                margin-right: 54px;
+            }
+        }
+    }
+    .header_logo{
+        ul{
+            display: flex;
+            font-size: 16px;
+            list-style: none;
+        }
+        li{
+            margin-right: 30px;
+        }
+    }
 }
 
 }

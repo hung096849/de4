@@ -1,23 +1,21 @@
 .main-content{
-    position: relative;
     font-family: 'Poppins';
 }
 .background{
     &-item{
-       position: relative;bottom: 100px;
-       z-index: -1;
+     
         img{
             max-width: 100%;
             width: 100%;
-            height: 950px;
+            min-height: 950px;
         }
     }
     .background-content {
     position: absolute;
-    top: 30.5%;
+    top: 60.5%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%);
+    transform: translate(-50.5%,-60px);
         .background-text{    
             .background-title{
                 font-size: 60px;
@@ -54,7 +52,7 @@
     }
 }
 .info{
-   transform: translate(0,-180px);
+   transform: translate(0,-80px);
    p{text-align: center;}
    .row1, .row2{
        display: flex;
@@ -120,7 +118,7 @@
     }
 }
 .product{
-   transform: translate(0,-12%);
+    margin-top: 8px;
     .ui-widget-content {
         border: none;
         background-color: #fff;
@@ -185,8 +183,9 @@
         
           .item-hover{
             margin-top: 40px;
-            padding-left: 30px;
+            padding-left: 10px;
             padding-bottom: 34px;
+            padding-top: 10px;
            position: relative; 
            .cart{
              display: none;
@@ -208,6 +207,9 @@
                 display: flex;
                 transition: all 0.3s;
                 color: #777777;
+                i{
+                    padding-left: 8px;
+                }
                 svg{
                     width: 15px; margin-left: 10px;
                 }
@@ -264,9 +266,13 @@
             border: 1px solid #ffffff;
             margin-bottom: 47px;
             .item-hover{
-            padding-left: 50px;
-            padding-bottom: 34px;
+            padding-left: 10px;
+            padding-bottom: 54px;
             position: relative;
+            .item-content{
+                padding-left: 20px;
+                padding-top: 11.1px;
+            }
             .cart{
                 display: none;
                 flex-direction: column;
@@ -288,6 +294,9 @@
                    display: flex;
                    transition: all 0.3s;
                    color: #777777;
+                   i{
+                    padding-left: 8px;
+                }   
                    svg{
                     width: 15px; margin-left: 10px;
                 }
@@ -325,7 +334,6 @@
 }
 }
 .slider{
-    margin-bottom: 90px;
     text-align: center;
         
         .img-slider{
@@ -375,20 +383,20 @@
 }
 .end{
     hr{
-        margin-top: 90px;
+        margin-top: 102px;
     }
     .logo{
-        margin-top: 40px;
+        margin-top: 32px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         div{
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 110px;
-            height: 70px;
+            max-width: 142px;
+            height: 88px;
             img{
                 width: 100%;
             }
