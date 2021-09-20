@@ -671,45 +671,21 @@ input {
   .info .item6 {
     width: 50%;
   }
-  .menu_mobile {
-    display: block;
-    max-width: 100px;
+  .header-nav-bar nav .header_logo {
+    display: none;
   }
-  .menu_mobile img {
-    width: 100%;
+  .header-nav-bar nav .logo {
+    margin-left: 170px;
+  }
+  .product .list1 .row .strengh-item,
+  .product .list2 .row .strengh-item {
+    width: 40%;
   }
   .background-content-inner p {
     max-width: 400px;
   }
-  .slider-content p {
-    display: none;
-  }
   div {
     flex-wrap: wrap;
-  }
-  .product .list1 .strengh-item {
-    cursor: pointer;
-    transition: all 0.25s;
-    margin-bottom: 47px;
-    text-align: center;
-    width: 50%;
-    padding: 0 15px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .product .list2 .strengh-item {
-    cursor: pointer;
-    transition: all 0.25s;
-    margin-bottom: 47px;
-    text-align: center;
-    width: 50%;
-    padding: 0 15px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .footer .head-footer .child2 {
     display: flex;
@@ -718,6 +694,12 @@ input {
     align-items: center;
   }
   .footer .head-footer .child2 .row {
-    width: 25%;
+    width: 100%;
+  }
+  .footer .head-footer .child2 .row .contact,
+  .footer .head-footer .child2 .row .account,
+  .footer .head-footer .child2 .row .information,
+  .footer .head-footer .child2 .row .link {
+    width: 50%;
   }
 }
