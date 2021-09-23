@@ -115,9 +115,8 @@ input {
   display: flex;
   font-size: 16px;
   list-style: none;
-}
-.header-nav-bar nav .header_nav ul li {
-  margin-right: 54px;
+  width: 590px;
+  justify-content: space-between;
 }
 .header-nav-bar nav .header_logo ul {
   display: flex;
@@ -125,7 +124,7 @@ input {
   list-style: none;
 }
 .header-nav-bar nav .header_logo li {
-  margin-right: 30px;
+  margin-left: 52px;
 }
 .cover {
   position: fixed;
@@ -327,7 +326,7 @@ input {
   border-bottom-width: 2px;
 }
 .main-content .product .list1 {
-  margin-bottom: 58px;
+  margin-bottom: 62px;
 }
 .main-content .product .list1 .strengh {
   display: flex;
@@ -345,8 +344,8 @@ input {
 }
 .main-content .product .list1 .strengh-item .item-hover {
   margin-top: 50px;
-  padding-left: 10px;
-  padding-bottom: 24px;
+  margin-left: 10px;
+  padding-bottom: 22px;
   position: relative;
 }
 .main-content .product .list1 .strengh-item .item-hover .item-content {
@@ -377,7 +376,7 @@ input {
   transition: all 0.3s;
   color: #777777;
 }
-.main-content .product .list1 .strengh-item .item-hover .cart .cart-items i {
+.main-content .product .list1 .strengh-item .item-hover .cart .cart-items a {
   padding-left: 8px;
 }
 .main-content .product .list1 .strengh-item .item-hover .cart .cart-items svg {
@@ -386,6 +385,8 @@ input {
 }
 .main-content .product .list1 .strengh-item .item-hover .cart .cart-items:hover {
   background-color: #dd2f31;
+}
+.main-content .product .list1 .strengh-item .item-hover .cart .cart-items:hover a {
   color: #ffffff;
 }
 .main-content .product .list1 .strengh-item .item-hover:hover {
@@ -408,7 +409,7 @@ input {
 }
 .main-content .slider {
   text-align: center;
-  margin-bottom: 119px;
+  margin-bottom: 148px;
 }
 .main-content .slider .img-slider {
   margin-top: 50px;
@@ -446,7 +447,7 @@ input {
   padding-bottom: 10px;
 }
 .main-content .slider #short_text {
-  line-height: 30px;
+  line-height: 0px;
   font-size: 14px;
   color: #777777;
   font-weight: 400;
@@ -588,6 +589,21 @@ input {
 @media all and (max-width: 768px) {
   nav a {
     display: none;
+  }
+  .footer .head-footer .child2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .head-footer .child2 .row {
+    width: 100%;
+  }
+  .footer .head-footer .child2 .row .contact,
+  .footer .head-footer .child2 .row .account,
+  .footer .head-footer .child2 .row .information,
+  .footer .head-footer .child2 .row .link {
+    width: 50%;
   }
 }
 @media all and (max-width: 576px) {
