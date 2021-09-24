@@ -151,7 +151,7 @@ input {
 }
 .main-content .background .background-content {
   position: absolute;
-  top: 50.5%;
+  top: 51%;
   left: 50%;
   width: 100%;
   transform: translate(-50%, -56.5%);
@@ -187,6 +187,7 @@ input {
   line-height: 50px;
   font-weight: 400;
   text-align: center;
+  color: #ffffff;
 }
 .main-content .info {
   transform: translate(0, -80px);
@@ -365,8 +366,6 @@ input {
 }
 .main-content .product .list1 .strengh-item .item-hover .cart .cart-items {
   border: 1px solid #dddddd;
-  width: 34px;
-  height: 34px;
   margin-bottom: 14px;
   align-items: center;
   border-radius: 5px 0 5px 0;
@@ -376,7 +375,8 @@ input {
   color: #777777;
 }
 .main-content .product .list1 .strengh-item .item-hover .cart .cart-items a {
-  padding-left: 8px;
+  padding: 8px;
+  color: #777777;
 }
 .main-content .product .list1 .strengh-item .item-hover .cart .cart-items svg {
   width: 15px;
@@ -447,10 +447,10 @@ input {
   color: #777777;
   font-weight: 400;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 .main-content .slider #short_text {
-  line-height: 0px;
+  line-height: 4px;
   font-size: 14px;
   color: #777777;
   font-weight: 400;
@@ -531,11 +531,11 @@ input {
 .footer .head-footer .child2 .account,
 .footer .head-footer .child2 .information,
 .footer .head-footer .child2 .link {
-  margin-top: 70px;
+  margin-top: 68px;
   margin-bottom: 30px;
   font-size: 18px;
   color: #ffffff;
-  line-height: 30px;
+  line-height: 28px;
   font-weight: bold;
   width: 23%;
 }
