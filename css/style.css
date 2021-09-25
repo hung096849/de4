@@ -105,6 +105,9 @@ input {
 .header-nav-bar .menu_mobile {
   display: none;
 }
+.header-nav-bar .dropdown-content {
+  display: none;
+}
 .header-nav-bar nav {
   display: flex;
   justify-content: space-between;
@@ -143,11 +146,6 @@ input {
 }
 .main-content .background {
   position: relative;
-}
-.main-content .background-item img {
-  max-width: 100%;
-  width: 100%;
-  min-height: 950px;
 }
 .main-content .background .background-content {
   position: absolute;
@@ -440,16 +438,16 @@ input {
   text-align: center;
   margin: 0;
 }
-.main-content .slider #long_text {
+.main-content .slider .long_text {
   min-height: 45px;
   font-size: 18px;
-  margin: 24px 190px;
+  margin: 24px 17%;
   color: #777777;
   font-weight: 400;
   text-align: center;
   padding-bottom: 8px;
 }
-.main-content .slider #short_text {
+.main-content .slider .short_text {
   line-height: 4px;
   font-size: 14px;
   color: #777777;
@@ -590,8 +588,48 @@ input {
   }
 }
 @media all and (max-width: 768px) {
-  nav a {
+  .header-nav-bar {
+    /* Links inside the dropdown */
+    /* Change color of dropdown links on hover */
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  }
+  .header-nav-bar .dropdown-content {
     display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+  .header-nav-bar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .header-nav-bar .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .header-nav-bar .show {
+    display: block;
+  }
+  .header-nav-bar .menu_mobile {
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .header-nav-bar .menu_mobile i {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  .header-nav-bar nav a {
+    display: none;
+  }
+  .header-nav-bar nav .logo {
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
   }
   .footer .head-footer .child2 {
     display: flex;
@@ -626,12 +664,9 @@ input {
   .header-nav-bar nav .header_logo {
     display: none;
   }
-  .header-nav-bar nav .logo {
-    margin-left: 170px;
-  }
   .product .list1 .row .strengh-item,
   .product .list2 .row .strengh-item {
-    width: 40%;
+    width: 50%;
   }
   .background-content-inner p {
     max-width: 400px;
@@ -653,5 +688,6 @@ input {
   .footer .head-footer .child2 .row .information,
   .footer .head-footer .child2 .row .link {
     width: 50%;
+    margin-left: 100px;
   }
 }

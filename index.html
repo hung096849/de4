@@ -1,914 +1,951 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
-    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" href="css/slick-1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.js"> -->
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+  <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.js"> -->
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
 
 </head>
+
 <body>
-    <div class="cover"></div>
-    <div class="wrapper">
-        <div class="header-nav-bar">
-          <div class="menu_mobile">
-            <img src="image/menu.png" alt="">
+  <div class="cover"></div>
+  <div class="wrapper">
+    <div class="header-nav-bar">
+      <div class="menu_mobile">
+        <i id="menu" onclick="Click()" class="fas fa-bars"></i>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">Pages</a>
+        <a href="#">Classes</a>
+        <a href="">Portfolio</a>
+        <a href="">Blog</a>
+        <a href="">Contacts</a>
+      </div>
+      <div class="container">
+        <nav>
+          <div class="logo"><img src="image/Logo.png" alt=""></div>
+          <div class="header_nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li> <a href="#">Pages</a></li>
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
           </div>
-            <div class="container">
-                <nav>
-                    <div class="logo"><img src="image/Logo.png" alt=""></div>
-                    <div class="header_nav">
-                      <ul>
-                        <li><a href="#">Home</a></li>
-                        <li> <a href="#">Pages</a></li>
-                        <li><a href="#">Classes</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
-                      </ul>
-                    </div>
-                    <div class="header_logo">
-                    <ul>
-                      <li><a  class="fas fa-search" href="#"></a></li>
-                      <li><a  class="fas fa-shopping-basket" href="#"></a></li>
-                      <li><a class="fas fa-user" href="#"></a></li>
-                    </ul>
-                    </div>
-                 
-                </nav>
+          <div class="header_logo">
+            <ul>
+              <li><a class="fas fa-search" href="#"></a></li>
+              <li><a class="fas fa-shopping-basket" href="#"></a></li>
+              <li><a class="fas fa-user" href="#"></a></li>
+            </ul>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="background">
+        <div style="background-image: url(image/Base.png);min-height: 950px; background-position: right;" class="background-item ">
+          <!-- <img style="background-image: url(image/Base.png);" alt=""> -->
+          <div class="background-content container">
+
+            <div class="background-text">
+              <div class="background-title ">Dumbbells Shop</div>
+              <div class="background-summary ">Best body fitness</div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+              <a href="">
+                <div class="slide-btn">SHOP NOW</div>
+              </a>
             </div>
+
+          </div>
         </div>
-        <div class="main-content">
-            <div class="background">
-                <div class="background-item ">
-                    <img style="background-image: url(image/Base.png);" alt="">
-                    <div class="background-content container">
-                            
-                                <div class="background-text">
-                                    <div class="background-title ">Dumbbells Shop</div>
-                                <div class="background-summary ">Best body fitness</div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
-                            <a href=""><button class="slide-btn">SHOP NOW</button></a> 
-                                </div>
-                          
-                    </div>
-                </div>
+      </div>
+      <div class="info ">
+        <div class="container">
+          <div class="row1">
+
+            <div class="item1"><img src="image/5cb04e457e213.png" alt=""></div>
+            <div class="item2">
+              <img src="image/icon.png" alt="">
+              <h3>STRENGTH</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-            <div class="info ">
-                <div class="container">
-                      <div class="row1">
-                         
-                            <div class="item1"><img src="image/5cb04e457e213.png" alt=""></div>
-                            <div class="item2">
-                                <img src="image/icon.png" alt="">
-                                <h3>STRENGTH</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
-                            <div class="item3"><img src="image/5cff1632c51da.png" alt=""></div>
-                        
-                      </div>
-                      <div class="row2">
-                          
-                            <div class="item4">
-                                <img src="image/icon (1).png" alt="">
-                                 <h3>DUMBBELLS</h3>
-                                <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
-                            </div>
-                            <div class="item5"><img src="image/5cee3d334ad30.png" alt=""></div>
-                            <div class="item6">
-                                <img src="image/icon (2).png" alt="">
-                                  <h3>POWER RACK & CAGES</h3>
-                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
-                          
-                      </div>
-                   
-                </div>
+            <div class="item3"><img src="image/5cff1632c51da.png" alt=""></div>
+
+          </div>
+          <div class="row2">
+
+            <div class="item4">
+              <img src="image/icon1.png" alt="">
+              <h3>DUMBBELLS</h3>
+              <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
             </div>
-            <div class="product">
-                <div class="container">
-                    <!-- <div class="row">
+            <div class="item5"><img src="image/5cee3d334ad30.png" alt=""></div>
+            <div class="item6">
+              <img src="image/icon2.png" alt="">
+              <h3>POWER RACK & CAGES</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="product">
+        <div class="container">
+          <!-- <div class="row">
                         <div class="sellers">TOP SELLERS</div>
                        <div class="featured" >FEATURED</div>
                        <div class="reviews" > MOST REVIEWS</div>
                     </div> -->
-                    <div id="tabs">
-                      <ul>
-                        <li><a href="#tabs-1" class="sellers">TOP SELLERS</a></li>
-                        <li><a href="#tabs-2"class="featured">FEATURED</a></li>
-                        <li><a href="#tabs-3" class="reviews">MOST REVIEWS</a></li>
-                      </ul>
-                      <div id="tabs-1">
-                        <div class="list1">
-                          <div class="row">
-  
-                              <div class="strengh-item">
-                                  <div class="item-hover ">
-                                      <div class="cart">
-                                          <div class="cart-items">
-                                           <a href="#" class="fas fa-shopping-basket"></a >
-                                          </div>
-                                          <div class="cart-items ">
-                                            <a href="#" class="fas fa-eye"></a >
-                                          </div>
-                                          <div class="cart-items ">
-                                            <a href="#" class="fas fa-heart"></a >
-                                          </div>
-                                          <div class="cart-items">
-                                            <a href="#" class="fas fa-exchange-alt"></a >
-                                          </div>
-                                      </div>
-                                      <div class="item-img">
-                                          <img src="image/img.png" alt="">
-                                      </div>
-                                      <div class="item-content">
-                                        <p>Body Champ Cardio</p> 
-                                        <div><span>$342.00</span></div>
-                                      </div>
-                                  </div>
-                                
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a href="#"class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a href="#" class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a href="#" class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a href="#" class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img">
-                                          <img src="image/img (1).png" alt="">
-                                      </div>
-                                      <div class="item-content">
-                                          <p>Body Solid GCEC340</p>
-                                          <div><span>$214.00</span></div>
-                                      </div>
-                                  </div>
-                                  
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a href="#" class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a href="#" class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a href="#" class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a href="#" class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"> <img src="image/img (2).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>Bowflex BXE116 Elliptical</p>
-                                          <div><span>$421.00</span></div>
-                                      </div>
-                                  </div>
-                                  
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a href="#" class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a href="#" class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a href="#" class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"> <img src="image/GHD.png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>ETHOS GHD</p>
-                                          <div><span>$152.00</span></div>
-                                      </div>
-                                  </div>
-                                 
-                              </div>
-                        
-                     
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"><img src="image/img (3).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>AFG Pro 7.2AI Incline</p>
-                                          <div><span>$252.00</span></div>
-                                      </div>
-                                  </div>
-                                  
-                      
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a href="#" class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a href="#" class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a href="#" class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a href="#" class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"><img src="image/img (4).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>Weight Bench</p>
-                                          <div><span>$412.00</span></div>
-                                      </div>
-                                  </div>
-                                 
-                                 
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"><img src="image/img (5).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>ProForm Hiit Trainer Lite 5.9</p>
-                                          <div><span>$300.00</span></div>
-                                      </div>
-                                  </div>
-                          
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a href="#" class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a href="#" class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a href="#" class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img">
-                                          <img src="image/fitness.png" alt="">
-                                      </div>
-                                      <div class="item-content">
-                                          <p>Fitness Gear Pro</p>
-                                          <div><span>$124.00</span></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
+          <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1" class="sellers">TOP SELLERS</a></li>
+              <li><a href="#tabs-2" class="featured">FEATURED</a></li>
+              <li><a href="#tabs-3" class="reviews">MOST REVIEWS</a></li>
+            </ul>
+            <div id="tabs-1">
+              <div class="list1">
+                <div class="row">
+
+                  <div class="strengh-item">
+                    <div class="item-hover ">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a href="#" class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a href="#" class="fas fa-exchange-alt"></a>
                         </div>
                       </div>
-                      
-                      <div id="tabs-2">
-                        <div class="list1">
-                          <div class="row">
-  
-                              <div class="strengh-item">
-                                  <div class="item-hover ">
-                                      <div class="cart">
-                                          <div class="cart-items">
-                                           <a class="fas fa-shopping-basket"></a >
-                                          </div>
-                                          <div class="cart-items ">
-                                            <a class="fas fa-eye"></a >
-                                          </div>
-                                          <div class="cart-items ">
-                                            <a class="fas fa-heart"></a >
-                                          </div>
-                                          <div class="cart-items">
-                                            <a class="fas fa-exchange-alt"></a >
-                                          </div>
-                                      </div>
-                                      <div class="item-img">
-                                          <img src="image/img.png" alt="">
-                                      </div>
-                                      <div class="item-content">
-                                        <p>Body Champ Cardio</p> 
-                                        <div><span>$342.00</span></div>
-                                      </div>
-                                  </div>
-                                
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img">
-                                          <img src="image/img (1).png" alt="">
-                                      </div>
-                                      <div class="item-content">
-                                          <p>Body Solid GCEC340</p>
-                                          <div><span>$214.00</span></div>
-                                      </div>
-                                  </div>
-                                  
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"> <img src="image/img (2).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>Bowflex BXE116 Elliptical</p>
-                                          <div><span>$421.00</span></div>
-                                      </div>
-                                  </div>
-                                  
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"> <img src="image/GHD.png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>ETHOS GHD</p>
-                                          <div><span>$152.00</span></div>
-                                      </div>
-                                  </div>
-                                 
-                              </div>
-                        
-                     
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"><img src="image/img (3).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>AFG Pro 7.2AI Incline</p>
-                                          <div><span>$252.00</span></div>
-                                      </div>
-                                  </div>
-                                  
-                      
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"><img src="image/img (4).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>Weight Bench</p>
-                                          <div><span>$412.00</span></div>
-                                      </div>
-                                  </div>
-                                 
-                                 
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"><img src="image/img (5).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>ProForm Hiit Trainer Lite 5.9</p>
-                                          <div><span>$300.00</span></div>
-                                      </div>
-                                  </div>
-                          
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img">
-                                          <img src="image/fitness.png" alt="">
-                                      </div>
-                                      <div class="item-content">
-                                          <p>Fitness Gear Pro</p>
-                                          <div><span>$124.00</span></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
+                      <div class="item-img">
+                        <img src="image/img.png" alt="">
                       </div>
-                      <div id="tabs-3">
-                        <div class="list1">
-                          <div class="row">
-  
-                              <div class="strengh-item">
-                                  <div class="item-hover ">
-                                      <div class="cart">
-                                          <div class="cart-items">
-                                           <a class="fas fa-shopping-basket"></a >
-                                          </div>
-                                          <div class="cart-items ">
-                                            <a class="fas fa-eye"></a >
-                                          </div>
-                                          <div class="cart-items ">
-                                            <a class="fas fa-heart"></a >
-                                          </div>
-                                          <div class="cart-items">
-                                            <a class="fas fa-exchange-alt"></a >
-                                          </div>
-                                      </div>
-                                      <div class="item-img">
-                                          <img src="image/img.png" alt="">
-                                      </div>
-                                      <div class="item-content">
-                                        <p>Body Champ Cardio</p> 
-                                        <div><span>$342.00</span></div>
-                                      </div>
-                                  </div>
-                                
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img">
-                                          <img src="image/img (1).png" alt="">
-                                      </div>
-                                      <div class="item-content">
-                                          <p>Body Solid GCEC340</p>
-                                          <div><span>$214.00</span></div>
-                                      </div>
-                                  </div>
-                                  
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"> <img src="image/img (2).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>Bowflex BXE116 Elliptical</p>
-                                          <div><span>$421.00</span></div>
-                                      </div>
-                                  </div>
-                                  
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"> <img src="image/GHD.png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>ETHOS GHD</p>
-                                          <div><span>$152.00</span></div>
-                                      </div>
-                                  </div>
-                                 
-                              </div>
-                        
-                     
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"><img src="image/img (3).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>AFG Pro 7.2AI Incline</p>
-                                          <div><span>$252.00</span></div>
-                                      </div>
-                                  </div>
-                                  
-                      
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"><img src="image/img (4).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>Weight Bench</p>
-                                          <div><span>$412.00</span></div>
-                                      </div>
-                                  </div>
-                                 
-                                 
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img"><img src="image/img (5).png" alt=""></div>
-                                      <div class="item-content">
-                                          <p>ProForm Hiit Trainer Lite 5.9</p>
-                                          <div><span>$300.00</span></div>
-                                      </div>
-                                  </div>
-                          
-                              </div>
-                              <div class="strengh-item">
-                                  <div class="item-hover">
-                                    <div class="cart">
-                                      <div class="cart-items">
-                                       <a class="fas fa-shopping-basket"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-eye"></a >
-                                      </div>
-                                      <div class="cart-items ">
-                                        <a class="fas fa-heart"></a >
-                                      </div>
-                                      <div class="cart-items">
-                                        <a class="fas fa-exchange-alt"></a >
-                                      </div>
-                                  </div>
-                                      <div class="item-img">
-                                          <img src="image/fitness.png" alt="">
-                                      </div>
-                                      <div class="item-content">
-                                          <p>Fitness Gear Pro</p>
-                                          <div><span>$124.00</span></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
+                      <div class="item-content">
+                        <p>Body Champ Cardio</p>
+                        <div><span>$342.00</span></div>
                       </div>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="slider ">
-                    <div class="slider-content">
-                        <h2>See What They Said About Us</h2>
-                        <div class="img-slider"><img src="image/5cdbcad37abe8.png" alt=""></div>
-                        <p id="long_text">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
-                        <h3>LINA</h3>
-                         <p id="short_text"> Happy Clients</p>
-                         
-                    </div>
-                    <div class="slider-content">
-                      <h2>See What They Said About Us</h2>
-                      <div class="img-slider"><img src="image/5cdbcad37abe8.png" alt=""></div>
-                      <p id="long_text">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
-                      <h3>LINA</h3>
-                       <p id="short_text"> Happy Clients</p>
-                       
+
                   </div>
-                  <div class="slider-content">
-                    <h2>See What They Said About Us</h2>
-                    <div class="img-slider"><img src="image/5cdbcad37abe8.png" alt=""></div>
-                    <p id="long_text">“Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me.</p>
-                    <h3>LINA</h3>
-                     <p id="short_text"> Happy Clients</p>
-                     
-                </div>
-            </div>
-            <div class="end">
-                <div class="container">
-                    <hr>
-                    <div class="logo">
-                        <div><img src="image/Brand 1.png" alt=""></div>
-                        <div><img src="image/Brand 2.png" alt=""></div>
-                        <div><img src="image/Brand 6.png" alt=""></div>
-                        <div><img src="image/Brand 5.png" alt=""></div>
-                        <div><img src="image/Brand 3.png" alt=""></div>
-                        <div><img src="image/Brand 4.png" alt=""></div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a href="#" class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a href="#" class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img">
+                        <img src="image/img1.png" alt="">
+                      </div>
+                      <div class="item-content">
+                        <p>Body Solid GCEC340</p>
+                        <div><span>$214.00</span></div>
+                      </div>
                     </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a href="#" class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a href="#" class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"> <img src="image/img2.png" alt=""></div>
+                      <div class="item-content">
+                        <p>Bowflex BXE116 Elliptical</p>
+                        <div><span>$421.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a href="#" class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"> <img src="image/GHD.png" alt=""></div>
+                      <div class="item-content">
+                        <p>ETHOS GHD</p>
+                        <div><span>$152.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"><img src="image/img3.png" alt=""></div>
+                      <div class="item-content">
+                        <p>AFG Pro 7.2AI Incline</p>
+                        <div><span>$252.00</span></div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a href="#" class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a href="#" class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"><img src="image/img4.png" alt=""></div>
+                      <div class="item-content">
+                        <p>Weight Bench</p>
+                        <div><span>$412.00</span></div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"><img src="image/img5.png" alt=""></div>
+                      <div class="item-content">
+                        <p>ProForm Hiit Trainer Lite 5.9</p>
+                        <div><span>$300.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a href="#" class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img">
+                        <img src="image/fitness.png" alt="">
+                      </div>
+                      <div class="item-content">
+                        <p>Fitness Gear Pro</p>
+                        <div><span>$124.00</span></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+
+            <div id="tabs-2">
+              <div class="list1">
+                <div class="row">
+
+                  <div class="strengh-item">
+                    <div class="item-hover ">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img">
+                        <img src="image/img.png" alt="">
+                      </div>
+                      <div class="item-content">
+                        <p>Body Champ Cardio</p>
+                        <div><span>$342.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img">
+                        <img src="image/img1.png" alt="">
+                      </div>
+                      <div class="item-content">
+                        <p>Body Solid GCEC340</p>
+                        <div><span>$214.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"> <img src="image/img2.png" alt=""></div>
+                      <div class="item-content">
+                        <p>Bowflex BXE116 Elliptical</p>
+                        <div><span>$421.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"> <img src="image/GHD.png" alt=""></div>
+                      <div class="item-content">
+                        <p>ETHOS GHD</p>
+                        <div><span>$152.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"><img src="image/img3.png" alt=""></div>
+                      <div class="item-content">
+                        <p>AFG Pro 7.2AI Incline</p>
+                        <div><span>$252.00</span></div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"><img src="image/img4.png" alt=""></div>
+                      <div class="item-content">
+                        <p>Weight Bench</p>
+                        <div><span>$412.00</span></div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"><img src="image/img5.png" alt=""></div>
+                      <div class="item-content">
+                        <p>ProForm Hiit Trainer Lite 5.9</p>
+                        <div><span>$300.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img">
+                        <img src="image/fitness.png" alt="">
+                      </div>
+                      <div class="item-content">
+                        <p>Fitness Gear Pro</p>
+                        <div><span>$124.00</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tabs-3">
+              <div class="list1">
+                <div class="row">
+
+                  <div class="strengh-item">
+                    <div class="item-hover ">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img">
+                        <img src="image/img.png" alt="">
+                      </div>
+                      <div class="item-content">
+                        <p>Body Champ Cardio</p>
+                        <div><span>$342.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img">
+                        <img src="image/img1.png" alt="">
+                      </div>
+                      <div class="item-content">
+                        <p>Body Solid GCEC340</p>
+                        <div><span>$214.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"> <img src="image/img2.png" alt=""></div>
+                      <div class="item-content">
+                        <p>Bowflex BXE116 Elliptical</p>
+                        <div><span>$421.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"> <img src="image/GHD.png" alt=""></div>
+                      <div class="item-content">
+                        <p>ETHOS GHD</p>
+                        <div><span>$152.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"><img src="image/img3.png" alt=""></div>
+                      <div class="item-content">
+                        <p>AFG Pro 7.2AI Incline</p>
+                        <div><span>$252.00</span></div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"><img src="image/img4.png" alt=""></div>
+                      <div class="item-content">
+                        <p>Weight Bench</p>
+                        <div><span>$412.00</span></div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img"><img src="image/img5.png" alt=""></div>
+                      <div class="item-content">
+                        <p>ProForm Hiit Trainer Lite 5.9</p>
+                        <div><span>$300.00</span></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="strengh-item">
+                    <div class="item-hover">
+                      <div class="cart">
+                        <div class="cart-items">
+                          <a class="fas fa-shopping-basket"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-eye"></a>
+                        </div>
+                        <div class="cart-items ">
+                          <a class="fas fa-heart"></a>
+                        </div>
+                        <div class="cart-items">
+                          <a class="fas fa-exchange-alt"></a>
+                        </div>
+                      </div>
+                      <div class="item-img">
+                        <img src="image/fitness.png" alt="">
+                      </div>
+                      <div class="item-content">
+                        <p>Fitness Gear Pro</p>
+                        <div><span>$124.00</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        
-        
-            
-           
-        <div class="footer">
-            <div class="head-footer">
-                <div class="container">
-                    <div class="child1">
-                        <div class="footer__slogan-logo">
-                            <img src="image/Logo.png" alt="">
-                        </div>
-                        <div class="footer__slogan-content">
-                            Lorem lpsum is simply dummy text of the printing and typesetting
-                            industry. Lorem lpsum has been the industry's standard dummy text
-                            ever since the 1500s. when an unknown printer took a galley of
-                            type
-                        </div>
-                       <ul class="footer-icon">
-                         <li><a  class="fab fa-facebook-f" href=""></a></li>
-                         <li><a  class="fab fa-twitter" href=""></a></li>
-                         <li><a class="fab fa-google-plus-g" href=""></a></li>
-                         <li><a class="fab fa-youtube" href=""></a></li>
-                       </ul>
-                    </div>
-                  
-                    <div class="child2">
-                        <div class="row">
-                            <ul class="contact col">
-                                <li class="title">CONTACT US</li>
-                                <li class="footer__info--nav--item">
-                                  <i class="fas fa-map-marker-alt"></i>
-                                    <a href="#" class="test">200 Lincoin Ave, Salinas, CA 93901</a>
-                                </li>
-                                <li class="footer__info--nav--item">
-                                  <i class="fas fa-phone"></i>
-                                    <a href="#" class="test">023 32423 223</a>
-                                </li>
-                                <li class="footer__info--nav--item">
-                                  <i class="fas fa-envelope"></i>
-                                    <a href="#" class="test">gymax@example.com</a>
-                                </li>
-                                <li class="footer__info--nav--item">
-                                  <i class="far fa-clock"></i>
-                                    <a href="#" class="test">9:00 - 20:00 All day</a>
-                                </li>
-                            </ul>
-                            <ul class="account col">
-                                <li class="title">MY ACCOUNT</li>
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">My account</a>
-                                </li>
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">Check out</a>
-                                </li>
-                
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">Register</a>
-                                </li>
-                
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">Login</a>
-                                </li>
-                              </ul>
-                              <ul class="information col">
-                                <li class="title">INFORMATION</li>
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">About us</a>
-                                </li>
-                
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">Contact us</a>
-                                </li>
-                
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">Terms of user</a>
-                                </li>
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">Privacy Policy</a>
-                                </li>
-                              </ul>
-                              <ul class="link col">
-                                <li class="title">QUICK LINK</li>
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">New user</a>
-                                </li>
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">Help center</a>
-                                </li>
-                
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">Report spam</a>
-                                </li>
-                                <li class="footer__info--nav--item">
-                                  <a href="#" class="test">FAQs</a>
-                                </li>
-                              </ul>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="end-footer">
-                <div class="container">
-                   Copyright © 2019 Gymax - Design by ArrowHitech - All Rights Reserved 
-                </div>
-            </div>
+      </div>
+      <div class="container">
+        <div class="slider ">
+          <div class="slider-content">
+            <h2>See What They Said About Us</h2>
+            <div class="img-slider"><img src="image/5cdbcad37abe8.png" alt=""></div>
+            <p class="long_text">“Good services. I bought a bicycle with a wrong but they accepted free return for me and
+              exchange a new product for me.</p>
+            <h3>LINA</h3>
+            <p class="short_text"> Happy Clients</p>
+
+          </div>
+          <div class="slider-content">
+            <h2>See What They Said About Us</h2>
+            <div class="img-slider"><img src="image/5cdbcad37abe8.png" alt=""></div>
+            <p class="long_text">“Good services. I bought a bicycle with a wrong but they accepted free return for me and
+              exchange a new product for me.</p>
+            <h3>LINA</h3>
+            <p class="short_text"> Happy Clients</p>
+
+          </div>
+          <div class="slider-content">
+            <h2>See What They Said About Us</h2>
+            <div class="img-slider"><img src="image/5cdbcad37abe8.png" alt=""></div>
+            <p class="long_text">“Good services. I bought a bicycle with a wrong but they accepted free return for me and
+              exchange a new product for me.</p>
+            <h3>LINA</h3>
+            <p class="short_text"> Happy Clients</p>
+
+          </div>
         </div>
+        <div class="end">
+          <div class="container">
+            <hr>
+            <div class="logo">
+              <div><img src="image/Brand1.png" alt=""></div>
+              <div><img src="image/Brand2.png" alt=""></div>
+              <div><img src="image/Brand6.png" alt=""></div>
+              <div><img src="image/Brand5.png" alt=""></div>
+              <div><img src="image/Brand3.png" alt=""></div>
+              <div><img src="image/Brand4.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="footer">
+        <div class="head-footer">
+          <div class="container">
+            <div class="child1">
+              <div class="footer__slogan-logo">
+                <img src="image/Logo.png" alt="">
+              </div>
+              <div class="footer__slogan-content">
+                Lorem lpsum is simply dummy text of the printing and typesetting
+                industry. Lorem lpsum has been the industry's standard dummy text
+                ever since the 1500s. when an unknown printer took a galley of
+                type
+              </div>
+              <ul class="footer-icon">
+                <li><a class="fab fa-facebook-f" href=""></a></li>
+                <li><a class="fab fa-twitter" href=""></a></li>
+                <li><a class="fab fa-google-plus-g" href=""></a></li>
+                <li><a class="fab fa-youtube" href=""></a></li>
+              </ul>
+            </div>
+
+            <div class="child2">
+              <div class="row">
+                <ul class="contact col">
+                  <li class="title">CONTACT US</li>
+                  <li class="footer__info--nav--item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="#" class="test">200 Lincoin Ave, Salinas, CA 93901</a>
+                  </li>
+                  <li class="footer__info--nav--item">
+                    <i class="fas fa-phone"></i>
+                    <a href="#" class="test">023 32423 223</a>
+                  </li>
+                  <li class="footer__info--nav--item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="#" class="test">gymax@example.com</a>
+                  </li>
+                  <li class="footer__info--nav--item">
+                    <i class="far fa-clock"></i>
+                    <a href="#" class="test">9:00 - 20:00 All day</a>
+                  </li>
+                </ul>
+                <ul class="account col">
+                  <li class="title">MY ACCOUNT</li>
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">My account</a>
+                  </li>
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">Check out</a>
+                  </li>
+
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">Register</a>
+                  </li>
+
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">Login</a>
+                  </li>
+                </ul>
+                <ul class="information col">
+                  <li class="title">INFORMATION</li>
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">About us</a>
+                  </li>
+
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">Contact us</a>
+                  </li>
+
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">Terms of user</a>
+                  </li>
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">Privacy Policy</a>
+                  </li>
+                </ul>
+                <ul class="link col">
+                  <li class="title">QUICK LINK</li>
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">New user</a>
+                  </li>
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">Help center</a>
+                  </li>
+
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">Report spam</a>
+                  </li>
+                  <li class="footer__info--nav--item">
+                    <a href="#" class="test">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="end-footer">
+          <div class="container">
+            Copyright © 2019 Gymax - Design by ArrowHitech - All Rights Reserved
+          </div>
+        </div>
+      </div>
     </div>
-   
-    <script src="js/jquery-ui.js"></script>
-    <script>
-      $( function() {
-        $( "#tabs" ).tabs();
-      } );
-    </script>
-   <script>
-      $(".slider").slick({
-        
-  dots: true,
-  infinite: true,
-  speed: 300,
+  </div>
+  <script src="js/jquery-ui.js"></script>
+  <script>
+    function Click() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-  adaptiveHeight: true,
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#menu')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
-// normal options...
-arrows: false,
+  </script>
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+  <script>
+    $(".slider").slick({
 
-// the magic
+      dots: true,
+      infinite: true,
+      speed: 300,
 
-});
-   </script>
+      adaptiveHeight: true,
+
+      // normal options...
+      arrows: false,
+
+      // the magic
+
+    });
+  </script>
 </body>
+
 </html>
